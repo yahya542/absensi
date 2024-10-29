@@ -1,0 +1,194 @@
+
+
+/* warna : 
+ 1. hijau tosca : #009B77 
+ 2. biru laut:  #0088CC
+ 3. emas:  #FFD700 
+ 4. putih: #FFFFFF
+ 5. coklat muda: #D2B48C    
+ */ 
+
+ /* Basic Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.atas-dalam{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.atas-dalam img {
+    max-width: 100px;
+    height: auto;
+
+}
+
+/* Body Styling */
+body{
+    font-family: Arial, sans-serif;
+    background-image:url(uim1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 19, 128, 0.76);
+    z-index: 1;
+    
+}
+/* div keseluruhan*/
+.luar {
+
+    z-index: 1;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    margin-left: -100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* div atas */
+.atas{
+
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    padding-left: 1000px;
+    color: greenyellow;
+
+}
+.logo_uim{ 
+    margin-left: 175px;
+
+}
+#tulisan_uim{
+    text-align: right;
+    margin-top: 5px;
+}
+.atas, .login-container{
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/* Container Styling */
+.login-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index:2 ;
+    flex: 1;
+    margin-top: -100px;
+
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Title Styling */
+.login-title {
+    padding-bottom : -18px;
+    font-size: 24px;
+    color:white;
+    width: 75px;
+    
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(243, 239, 239);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #333;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+.login-button {
+    width: 40%;
+    padding: 7px;
+    
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color:grey;
+}
+.lupa-pasword {
+    color: rgb(233, 229, 229);
+    font-size: small;
+    margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+    .luar {
+        flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+        margin-left: 0;
+    }
+    .atas{
+        flex: 2;
+        
+    }
+    .login-container{
+        margin-top: 25px;
+    }
+    .logo_uim{
+        margin-left: 75px;
+    }
+    #tulisan_uim{
+        margin-left: 0;
+        text-align: left;
+    }
+}
