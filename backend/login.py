@@ -24,8 +24,8 @@ def get_db_connection():
 def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
-        user='MAKDUM',  # Ganti dengan username MySQL Anda
-        password='mkdm11111',  # Ganti dengan password MySQL Anda
+        user='DIMAS',  # Ganti dengan username MySQL Anda
+        password='dimas22222',  # Ganti dengan password MySQL Anda
         database='login_db'  # Ganti dengan nama database Anda
     )
 
