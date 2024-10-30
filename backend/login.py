@@ -4,11 +4,6 @@ import bcrypt
 
 app = Flask(__name__, template_folder="../frontend" , static_folder="../frontend")
 app.secret_key = 'your_secret_key'  # Ganti dengan kunci rahasia Anda
-
-
-
-
-
 # Koneksi ke database MySQL
 def get_db_connection():
     return mysql.connector.connect(
@@ -25,6 +20,15 @@ def get_db_connection():
         password='mkdm11111',  # Ganti dengan password MySQL Anda
         database='login_db'  # Ganti dengan nama database Anda
     )
+
+def get_db_connection():
+    return mysql.connector.connect(
+        host='localhost',
+        user='MAKDUM',  # Ganti dengan username MySQL Anda
+        password='mkdm11111',  # Ganti dengan password MySQL Anda
+        database='login_db'  # Ganti dengan nama database Anda
+    )
+
 password = "DEYA2501"
 hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 print(hashed_password)
@@ -32,6 +36,11 @@ print(hashed_password)
 password = "mkdm11111"
 hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 print(hashed_password)
+
+password = "dimas22222"
+hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+print(hashed_password)
+
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
