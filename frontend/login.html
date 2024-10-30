@@ -10,7 +10,7 @@
 
 </head>
 
-<body>8
+<body>
     <div class="luar">
         <div class="atas">
             <img src="{{url_for('static', filename='logo_uim.png')}}" alt="Logo Universitas Islam Madura"
@@ -23,7 +23,8 @@
                     src="{{url_for('static', filename='login.svg')}}" alt="Logo Login">
                 <h2 class="login-title">Login</h2>
             </div>
-            <form method="post" action="/login" id="loginForm" style="border: none; background: transparent; outline: none;">
+            <form method="post" action="/login" id="loginForm"
+                style="border: none; background: transparent; outline: none;">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" placeholder="Masukkan Username" autocomplete="off"
