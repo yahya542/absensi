@@ -20,7 +20,7 @@ function validateForm() {
         window.location.href = "/dashboard"; // Arahkan ke halaman berikutnya
     } 
     else if (username === correctUsername2 && npm === correctNpm2 && password === correctPassword2){
-        window.location.href = "/dashboard";
+        window.location.href = "/dashboard_dosen";
     }
     
     else {
