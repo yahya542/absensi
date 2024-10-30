@@ -59,6 +59,9 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     return render_template ("dashboard.html")
+@app.route ('/dashboard_dosen')
+def d_dosen():
+    return render_template ("dashboard_dosen.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
