@@ -8,38 +8,30 @@ app.secret_key = 'your_secret_key'  # Ganti dengan kunci rahasia Anda
 def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
-        user='YAHYA',  # Ganti dengan username MySQL Anda
-        password='Deya2501',  # Ganti dengan password MySQL Anda
+        user='mahasiswa',  # Ganti dengan username MySQL Anda
+        password='mhs12345',  # Ganti dengan password MySQL Anda
         database='login_db'  # Ganti dengan nama database Anda
     )
+
+
 
 def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
-        user='MAKDUM',  # Ganti dengan username MySQL Anda
-        password='mkdm11111',  # Ganti dengan password MySQL Anda
+        user='dosen',  # Ganti dengan username MySQL Anda
+        password='dosen12345',  # Ganti dengan password MySQL Anda
         database='login_db'  # Ganti dengan nama database Anda
     )
 
-def get_db_connection():
-    return mysql.connector.connect(
-        host='localhost',
-        user='DIMAS',  # Ganti dengan username MySQL Anda
-        password='dimas22222',  # Ganti dengan password MySQL Anda
-        database='login_db'  # Ganti dengan nama database Anda
-    )
-
-password = "DEYA2501"
+password = "mhs12345"
 hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 print(hashed_password)
 
-password = "mkdm11111"
+password = "dosen12345"
 hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 print(hashed_password)
 
-password = "dimas22222"
-hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-print(hashed_password)
+
 
 
 @app.route('/login', methods=['POST', 'GET'])
