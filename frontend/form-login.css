@@ -192,3 +192,17 @@ body::before{
         text-align: left;
     }
 }
+.signup{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px ; 
+    margin-top:30px;
+    text-align: center;
+    background-color: aqua;
+}
+.wrapper{
+    background-color: yellow ;
+    width: 50%;
+    justify-items: center;
+    margin-left: 50px;
+}
