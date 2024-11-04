@@ -58,10 +58,10 @@ def login():
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template ("dashboard.html")
+    return render_template ("/dashboard_mahasiswa/dashboard.html")
 @app.route ('/dashboard_dosen')
 def d_dosen():
-    return render_template ("dashboard_dosen.html")
+    return render_template ("/dashboard_dosen/dashboard_dosen.html")
 @app.route('/signup', methods=['POST', 'GET'])
 def signup():
     return render_template ("signup.html")

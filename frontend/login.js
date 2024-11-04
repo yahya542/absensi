@@ -15,6 +15,7 @@ function validateForm() {
         setTimeout(function () {
             window.location.href = credentials[username].redirectUrl;
         }, 2000);
+        
     } else {
         // Semua kombinasi kesalahan yang mungkin terjadi
         if (!credentials[username] && npm !== "12345" && password !== "mhs12345" && password !== "dosen12345") {
